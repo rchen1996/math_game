@@ -6,10 +6,10 @@ class Game
     @game_state = true
   end
 
-  def start_game
-    game_prompts = Prompt.new
-    player1 = Player.new
-    player2 = Player.new
+  def start_game(p1, p2, prompts)
+    game_prompts = prompts
+    player1 = p1
+    player2 = p2
 
     while @game_state
       game_prompts.math_question(current_player)
