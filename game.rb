@@ -32,7 +32,7 @@ class Game
       end
 
       if player1.lives == 0 || player2.lives == 0
-        if current_player == 1
+        if current_player == 2
           puts "Player 2 wins with a score of #{player2.lives}/3"
         else
           puts "Player 1 wins with a score of #{player1.lives}/3"
